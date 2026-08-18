@@ -70,14 +70,29 @@ Screenshots for each step are available in the `screenshots` folder.
 
 ## 9. Screenshots
 
-* **php-version.png** - PHP version verification.
-* **composer-version.png** - Composer version verification.
-* **laravel-version.png** - Laravel version verification.
-* **git-version.png** - Git version verification.
-* **mysql-version.png** - MySQL version verification.
-* **vscode.png** - Laravel project opened in Visual Studio Code.
-* **artisan-serve.png** - Laravel development server running.
-* **hello-laravel-homepage.png** - Completed customized homepage.
+* PHP version verification
+![php-version](screenshots/php-version.png)
+
+* Composer version verification
+![composer-version](screenshots/composer-version.png)
+
+* Laravel version verification
+![laravel-version](screenshots/laravel-version.png)
+
+* Git version verification
+![git-version](screenshots/git-version.png)
+
+* MySQL version verification
+![mysql-version](screenshots/mysql-version.png)
+
+* Laravel project opened in Visual Studio Code
+![vscode](screenshots/vscode.png)
+
+* Laravel development server running
+![artisan-serve](screenshots/artisan-serve.png)
+
+* Completed customized homepage
+![hello-laravel-homepage](screenshots/hello-laravel-homepage.png)
 
 ## 10. Reflection
 
