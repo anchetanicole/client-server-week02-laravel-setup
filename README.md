@@ -1,59 +1,102 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Hello Laravel - Client-Server Technologies
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 1. Project Title
 
-## About Laravel
+Hello Laravel - Client-Server Technologies
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 2. Introduction
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Laravel is a popular PHP web application framework that follows the Model-View-Controller (MVC) architectural pattern. It provides tools for routing, database management, templating, and application security, making web development faster and more organized.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Client-Server Technologies are important because they explain how clients, such as web browsers, communicate with servers to request and receive information. Understanding this relationship is essential in modern web application development.
 
-## Learning Laravel
+The purpose of this project is to install and configure the Laravel development environment, create a basic Laravel application, and demonstrate how a client accesses a Laravel application through a local development server.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 3. Objectives
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Install PHP and verify its version.
+* Install Composer as the PHP dependency manager.
+* Install Laravel and create a new Laravel project.
+* Install Git for version control.
+* Run a Laravel application using `php artisan serve`.
+* Customize the Laravel homepage with student information.
 
-## Laravel Sponsors
+## 4. Development Environment
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* **Operating System:** Windows 11
+* **PHP Version:** 8.2.12
+* **Laravel Version:** 12.66.0
+* **Composer Version:** 2.10.2
+* **Git Version:** 2.55.0.windows.4
+* **MySQL Version:** 26.7.0
+* **VS Code Version:** 1.133.0
 
-### Premium Partners
+## 5. Installation Steps
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+1. Install PHP and verify using `php -v`.
+2. Install Composer and verify using `composer -V`.
+3. Install Laravel and create the `hello-laravel` project.
+4. Install Git and verify using `git --version`.
+5. Install MySQL and verify using `mysql --version`.
+6. Install Visual Studio Code and open the Laravel project.
+7. Run `php artisan serve`.
+8. Open `http://127.0.0.1:8000` in a browser.
+9. Customize the homepage with the required student information.
 
-## Contributing
+Screenshots for each step are available in the `screenshots` folder.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 6. Project Structure
 
-## Code of Conduct
+* **app/** - Contains the application's core code, including models and controllers.
+* **routes/** - Defines the application's web and console routes.
+* **resources/** - Contains Blade views, CSS, and JavaScript files.
+* **public/** - Contains the public entry point and assets accessible by the browser.
+* **config/** - Stores application configuration files.
+* **database/** - Contains migrations, factories, and seeders.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 7. Problems Encountered
 
-## Security Vulnerabilities
+1. PHP initially required configuration in the Windows PATH environment variable.
+2. Composer encountered an HTTP 429 error while downloading Laravel dependencies.
+3. Laravel initially returned a 500 Internal Server Error because the `.env` file and application key were missing.
+4. Laravel reported that the SQLite database file and cache table were missing during cache clearing.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 8. Solutions
 
-## License
+1. PHP was added to the Windows PATH environment variable so that PHP commands could be executed from Command Prompt.
+2. The Composer installation was completed by retrying the dependency installation using the source download method.
+3. The `.env` file was created from `.env.example`, and an application encryption key was generated using `php artisan key:generate`.
+4. The SQLite database file was created and Laravel migrations were run to create the required database tables.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 9. Screenshots
+
+* **php-version.png** - PHP version verification.
+* **composer-version.png** - Composer version verification.
+* **laravel-version.png** - Laravel version verification.
+* **git-version.png** - Git version verification.
+* **mysql-version.png** - MySQL version verification.
+* **vscode.png** - Laravel project opened in Visual Studio Code.
+* **artisan-serve.png** - Laravel development server running.
+* **hello-laravel-homepage.png** - Completed customized homepage.
+
+## 10. Reflection
+
+This activity taught me how to set up and configure a complete Laravel development environment from the beginning. I learned the role of PHP as a server-side programming language, Composer as a PHP dependency manager, Laravel as a PHP framework, MySQL as a relational database, Visual Studio Code as a code editor, and Git as a version control system. I also learned how to create, customize, and run a Laravel project using the Artisan command-line tool.
+
+Throughout the activity, I encountered several challenges during the installation and configuration process. One of the major problems was the HTTP 429 error that occurred while Composer was downloading Laravel dependencies from GitHub. At first, the project could not run properly because some dependencies had not been completely downloaded. I learned that the messages showing packages being synchronized, installed, and generating optimized autoload files indicated that Composer was still completing the installation. I also encountered problems involving the '`.env` file, the SQLite database, and the application encryption key, which resulted in Internal Server Errors. By examining the error messages and logs, I was able to understand what was missing and work through the configuration problems instead of reinstalling the entire project.
+
+Another important thing I learned was how Git helps manage changes in a project. I learned how to initialize a repository, stage files, create commits, and prepare a project for submission to GitHub. I also encountered a Git configuration issue when Git could not identify my user name and email, which helped me understand that Git requires author information before creating commits.
+
+Laravel is important in client-server development because it provides a structured framework for creating web applications. A browser acts as the client and sends requests to the Laravel application running on the server. Laravel processes these requests through routes and other application components before returning a response to the client. This helped me better understand how client-server applications work in practice.
+
+Overall, this activity improved my ability to install, configure, troubleshoot, and manage a web development project. The experience will help me in future software development because I learned not only how to follow installation steps, but also how to read errors, identify their causes, and solve configuration problems independently. It also gave me practical experience with tools that are commonly used in professional web development.
+
+## 11. References
+
+Laravel. (2026). *Laravel documentation*. https://laravel.com/docs
+
+PHP Group. (2026). *PHP documentation*. https://www.php.net/docs.php
+
+Composer. (2026). *Composer documentation*. https://getcomposer.org/doc/
+
+Git. (2026). *Git documentation*. https://git-scm.com/doc
